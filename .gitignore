@@ -1,0 +1,7 @@
+html
+include/gtest/*
+*.dylib
+*.a
+*.o
+*.omc
+

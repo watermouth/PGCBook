@@ -1,0 +1,16 @@
+CXXTESTFILES[] =
+  add_unittest
+
+LIBS = libgtest 
+INCLUDES = ../include
+LDFLAGS = -lmylibrary -L.
+
+CXXProgram(add_unittest, gtest_main add_unittest)
+#If you want to test by one command "omake test", then the following line would be helpful
+#instead of an upper line.
+
+#$(CXXProgram add_unittest, gtest_main add_unittest): libmylibrary.dylib
+
+test: add_unittest
+  ./add_unittest
+

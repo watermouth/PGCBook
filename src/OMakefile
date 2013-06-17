@@ -1,0 +1,12 @@
+FILES[] =
+  add
+
+INCLUDES = ../include
+
+LIB = libmylibrary
+
+.DEFAULT: $(DynamicCXXLibraryInstall test, ../test, $(LIB), $(FILES))
+
+#$(LIB)$(EXT_DLL)
+
+
