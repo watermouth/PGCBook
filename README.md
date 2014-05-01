@@ -1,3 +1,8 @@
+-----------
+Programming contest challenge bookを読む
+
+---
+
 to use google test with omake:
 
   omake
